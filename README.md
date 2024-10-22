@@ -1,4 +1,7 @@
-FormEase CRM
+**Weather App**
+The Weather App is a React.js application that provides real-time weather information for any city worldwide. This application fetches data from a weather API and displays current weather conditions, including temperature, humidity, wind speed, and weather descriptions, in a user-friendly interface.
+
+**FormEase CRM**
 FormEase CRM is a modern, full-stack Customer Relationship Management (CRM) application built using the MERN stack. This project features a sleek dark theme, user-friendly forms, and a responsive admin panel for managing and viewing user data. The UI includes a sidebar for navigation and a form to input and display user information in a table format.
 
 Features
