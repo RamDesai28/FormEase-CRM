@@ -1,0 +1,177 @@
+:root {
+  --bg-color: #181818; /* Black background */
+  --sidebar-bg-color: #242424; /* Dark gray sidebar */
+  --form-bg-color: #303030; /* Form background slightly lighter */
+  --text-color: #f1f1f1; /* Light text */
+  --input-bg: #383838; /* Input field background */
+  --input-border: #4b4b4b; /* Input field border */
+  --input-hover-bg: #424242; /* Slightly lighter on hover */
+  --label-color: #a1a1a1; /* Gray for labels */
+  --button-bg: #61dafb; /* Button background */
+  --button-hover-bg: #52b0da; /* Button hover background */
+  --accent-color: #61dafb; /* Accent color */
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--bg-color); /* Overall background color */
+  color: var(--text-color); /* Default text color */
+}
+
+.admin-panel {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background-color: var(--sidebar-bg-color);
+  padding: 20px;
+  width: 250px;
+  position: fixed;
+  height: 100%;
+  border-right: 2px solid var(--accent-color);
+}
+
+.sidebar h2 {
+  font-size: 1.8em;
+  color: var(--accent-color); /* Accent color for sidebar title */
+  margin-bottom: 30px;
+  text-align: center; /* Center sidebar title */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.1em;
+  display: flex; /* Flexbox for icon alignment */
+  align-items: center; /* Center icon vertically */
+  padding: 10px;
+  border-radius: 5px; /* Rounded corners for links */
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: var(--form-bg-color); /* Hover effect on sidebar links */
+}
+
+.icon {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.content {
+  margin-left: 270px; /* Space between sidebar and content */
+  padding: 40px;
+  width: 100%;
+  background-color: var(--bg-color);
+}
+
+.card {
+  background-color: var(--form-bg-color);
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: var(--accent-color);
+  text-align: center;
+}
+
+.form-header {
+  margin-bottom: 20px;
+}
+
+form {
+  padding: 30px; /* Increased padding for better spacing */
+  background-color: var(--form-bg-color); /* Form background */
+  border-radius: 10px; /* Rounded corners for form */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+form h2 {
+  color: var(--accent-color); /* Accent color for header */
+  text-align: center; /* Centered header */
+  margin-bottom: 20px; /* Space below header */
+}
+
+form div {
+  margin-bottom: 20px; /* Space between input fields */
+}
+
+label {
+  color: var(--label-color); /* Color for labels */
+  margin-bottom: 5px; /* Space below label */
+  display: block; /* Stack labels above inputs */
+}
+
+input,
+textarea {
+  width: 100%; /* Full width inputs */
+  padding: 12px; /* Padding for input fields */
+  background-color: var(--input-bg); /* Dark background for inputs */
+  border: 1px solid var(--input-border); /* Light border color */
+  color: var(--text-color); /* Text color */
+  border-radius: 6px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+input:hover,
+textarea:hover {
+  background-color: var(--input-hover-bg); /* Change background on hover */
+}
+
+button {
+  background-color: var(--button-bg); /* Button background color */
+  padding: 12px; /* Button padding */
+  border: none; /* No border */
+  color: #ffffff; /* White text on button */
+  cursor: pointer; /* Pointer on hover */
+  border-radius: 6px; /* Rounded corners for buttons */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  width: 100%; /* Full width button */
+}
+
+button:hover {
+  background-color: var(--button-hover-bg); /* Change button background on hover */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background-color: var(--form-bg-color);
+}
+
+table th,
+table td {
+  padding: 15px;
+  border: 1px solid var(--input-border);
+}
+
+table th {
+  background-color: var(--sidebar-bg-color);
+}
+
+table td {
+  color: var(--text-color);
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* Added styles for saved users card */
+.saved-users {
+  border-radius: 10px;
+  padding: 20px;
+}
