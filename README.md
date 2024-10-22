@@ -21,7 +21,7 @@ FormEase CRM is a modern, full-stack Customer Relationship Management (CRM) appl
   - **Backend**: Node.js, Express.js
   - **Database**: MongoDB (Mongoose)
   - **Other**: Axios (for API requests)
-     ![FRONTEND]("C:\Users\BOBBY\OneDrive\Pictures\Screenshots\Screenshot 2024-10-22 173323.png")
+     
 
 ## Contributing
 
