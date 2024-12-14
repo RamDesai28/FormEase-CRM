@@ -1,0 +1,19 @@
+/* Basic Search Bar Styling */
+.search-bar {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .search-bar:focus {
+    border-color: #007bff; /* Blue color when focused */
+  }
+  
+  .search-bar::placeholder {
+    color: #888;
+  }
+  
